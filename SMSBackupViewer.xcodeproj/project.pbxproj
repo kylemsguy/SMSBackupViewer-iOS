@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271226AC25637805001E26FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AB25637805001E26FB /* AppDelegate.swift */; };
+		271226AE25637805001E26FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AD25637805001E26FB /* SceneDelegate.swift */; };
+		271226B025637805001E26FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AF25637805001E26FB /* ViewController.swift */; };
+		271226B325637805001E26FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271226B125637805001E26FB /* Main.storyboard */; };
+		271226B525637808001E26FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271226B425637808001E26FB /* Assets.xcassets */; };
+		271226B825637808001E26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271226B625637808001E26FB /* LaunchScreen.storyboard */; };
+		271226C325637809001E26FB /* SMSBackupViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226C225637809001E26FB /* SMSBackupViewerTests.swift */; };
+		271226CE25637809001E26FB /* SMSBackupViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		271226BF25637809001E26FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271226A025637805001E26FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 271226A725637805001E26FB;
+			remoteInfo = SMSBackupViewer;
+		};
+		271226CA25637809001E26FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271226A025637805001E26FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 271226A725637805001E26FB;
+			remoteInfo = SMSBackupViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		271226A825637805001E26FB /* SMSBackupViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSBackupViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		271226AB25637805001E26FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		271226AD25637805001E26FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		271226AF25637805001E26FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		271226B225637805001E26FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		271226B425637808001E26FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		271226B725637808001E26FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		271226B925637808001E26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271226BE25637809001E26FB /* SMSBackupViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSBackupViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		271226C225637809001E26FB /* SMSBackupViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSBackupViewerTests.swift; sourceTree = "<group>"; };
+		271226C425637809001E26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271226C925637809001E26FB /* SMSBackupViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSBackupViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSBackupViewerUITests.swift; sourceTree = "<group>"; };
+		271226CF25637809001E26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		271226A525637805001E26FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271226BB25637809001E26FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271226C625637809001E26FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2712269F25637805001E26FB = {
+			isa = PBXGroup;
+			children = (
+				271226AA25637805001E26FB /* SMSBackupViewer */,
+				271226C125637809001E26FB /* SMSBackupViewerTests */,
+				271226CC25637809001E26FB /* SMSBackupViewerUITests */,
+				271226A925637805001E26FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		271226A925637805001E26FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				271226A825637805001E26FB /* SMSBackupViewer.app */,
+				271226BE25637809001E26FB /* SMSBackupViewerTests.xctest */,
+				271226C925637809001E26FB /* SMSBackupViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		271226AA25637805001E26FB /* SMSBackupViewer */ = {
+			isa = PBXGroup;
+			children = (
+				271226AB25637805001E26FB /* AppDelegate.swift */,
+				271226AD25637805001E26FB /* SceneDelegate.swift */,
+				271226AF25637805001E26FB /* ViewController.swift */,
+				271226B125637805001E26FB /* Main.storyboard */,
+				271226B425637808001E26FB /* Assets.xcassets */,
+				271226B625637808001E26FB /* LaunchScreen.storyboard */,
+				271226B925637808001E26FB /* Info.plist */,
+			);
+			path = SMSBackupViewer;
+			sourceTree = "<group>";
+		};
+		271226C125637809001E26FB /* SMSBackupViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				271226C225637809001E26FB /* SMSBackupViewerTests.swift */,
+				271226C425637809001E26FB /* Info.plist */,
+			);
+			path = SMSBackupViewerTests;
+			sourceTree = "<group>";
+		};
+		271226CC25637809001E26FB /* SMSBackupViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */,
+				271226CF25637809001E26FB /* Info.plist */,
+			);
+			path = SMSBackupViewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		271226A725637805001E26FB /* SMSBackupViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271226D225637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewer" */;
+			buildPhases = (
+				271226A425637805001E26FB /* Sources */,
+				271226A525637805001E26FB /* Frameworks */,
+				271226A625637805001E26FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSBackupViewer;
+			productName = SMSBackupViewer;
+			productReference = 271226A825637805001E26FB /* SMSBackupViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		271226BD25637809001E26FB /* SMSBackupViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271226D525637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewerTests" */;
+			buildPhases = (
+				271226BA25637809001E26FB /* Sources */,
+				271226BB25637809001E26FB /* Frameworks */,
+				271226BC25637809001E26FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				271226C025637809001E26FB /* PBXTargetDependency */,
+			);
+			name = SMSBackupViewerTests;
+			productName = SMSBackupViewerTests;
+			productReference = 271226BE25637809001E26FB /* SMSBackupViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		271226C825637809001E26FB /* SMSBackupViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271226D825637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewerUITests" */;
+			buildPhases = (
+				271226C525637809001E26FB /* Sources */,
+				271226C625637809001E26FB /* Frameworks */,
+				271226C725637809001E26FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				271226CB25637809001E26FB /* PBXTargetDependency */,
+			);
+			name = SMSBackupViewerUITests;
+			productName = SMSBackupViewerUITests;
+			productReference = 271226C925637809001E26FB /* SMSBackupViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		271226A025637805001E26FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					271226A725637805001E26FB = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					271226BD25637809001E26FB = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 271226A725637805001E26FB;
+					};
+					271226C825637809001E26FB = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 271226A725637805001E26FB;
+					};
+				};
+			};
+			buildConfigurationList = 271226A325637805001E26FB /* Build configuration list for PBXProject "SMSBackupViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2712269F25637805001E26FB;
+			productRefGroup = 271226A925637805001E26FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				271226A725637805001E26FB /* SMSBackupViewer */,
+				271226BD25637809001E26FB /* SMSBackupViewerTests */,
+				271226C825637809001E26FB /* SMSBackupViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		271226A625637805001E26FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271226B825637808001E26FB /* LaunchScreen.storyboard in Resources */,
+				271226B525637808001E26FB /* Assets.xcassets in Resources */,
+				271226B325637805001E26FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271226BC25637809001E26FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271226C725637809001E26FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		271226A425637805001E26FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271226B025637805001E26FB /* ViewController.swift in Sources */,
+				271226AC25637805001E26FB /* AppDelegate.swift in Sources */,
+				271226AE25637805001E26FB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271226BA25637809001E26FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271226C325637809001E26FB /* SMSBackupViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271226C525637809001E26FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271226CE25637809001E26FB /* SMSBackupViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		271226C025637809001E26FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 271226A725637805001E26FB /* SMSBackupViewer */;
+			targetProxy = 271226BF25637809001E26FB /* PBXContainerItemProxy */;
+		};
+		271226CB25637809001E26FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 271226A725637805001E26FB /* SMSBackupViewer */;
+			targetProxy = 271226CA25637809001E26FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		271226B125637805001E26FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271226B225637805001E26FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		271226B625637808001E26FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271226B725637808001E26FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		271226D025637809001E26FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		271226D125637809001E26FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		271226D325637809001E26FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ8JASBGHD;
+				INFOPLIST_FILE = SMSBackupViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylemsguy.SMSBackupViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		271226D425637809001E26FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ8JASBGHD;
+				INFOPLIST_FILE = SMSBackupViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylemsguy.SMSBackupViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		271226D625637809001E26FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ8JASBGHD;
+				INFOPLIST_FILE = SMSBackupViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylemsguy.SMSBackupViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSBackupViewer.app/SMSBackupViewer";
+			};
+			name = Debug;
+		};
+		271226D725637809001E26FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ8JASBGHD;
+				INFOPLIST_FILE = SMSBackupViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylemsguy.SMSBackupViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSBackupViewer.app/SMSBackupViewer";
+			};
+			name = Release;
+		};
+		271226D925637809001E26FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ8JASBGHD;
+				INFOPLIST_FILE = SMSBackupViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylemsguy.SMSBackupViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMSBackupViewer;
+			};
+			name = Debug;
+		};
+		271226DA25637809001E26FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ8JASBGHD;
+				INFOPLIST_FILE = SMSBackupViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylemsguy.SMSBackupViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMSBackupViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		271226A325637805001E26FB /* Build configuration list for PBXProject "SMSBackupViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271226D025637809001E26FB /* Debug */,
+				271226D125637809001E26FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271226D225637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271226D325637809001E26FB /* Debug */,
+				271226D425637809001E26FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271226D525637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271226D625637809001E26FB /* Debug */,
+				271226D725637809001E26FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271226D825637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271226D925637809001E26FB /* Debug */,
+				271226DA25637809001E26FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 271226A025637805001E26FB /* Project object */;
+}
