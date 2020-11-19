@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		271226AC25637805001E26FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AB25637805001E26FB /* AppDelegate.swift */; };
 		271226AE25637805001E26FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AD25637805001E26FB /* SceneDelegate.swift */; };
-		271226B025637805001E26FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AF25637805001E26FB /* ViewController.swift */; };
+		271226B025637805001E26FB /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226AF25637805001E26FB /* ConversationViewController.swift */; };
 		271226B325637805001E26FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271226B125637805001E26FB /* Main.storyboard */; };
 		271226B525637808001E26FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271226B425637808001E26FB /* Assets.xcassets */; };
 		271226B825637808001E26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271226B625637808001E26FB /* LaunchScreen.storyboard */; };
 		271226C325637809001E26FB /* SMSBackupViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226C225637809001E26FB /* SMSBackupViewerTests.swift */; };
 		271226CE25637809001E26FB /* SMSBackupViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */; };
+		271226E225637BA1001E26FB /* MessageFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226E125637BA1001E26FB /* MessageFileTableViewCell.swift */; };
+		2758274E25662F040061282D /* ConversationViewController+MessagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758274D25662F040061282D /* ConversationViewController+MessagesDataSource.swift */; };
+		2758275625662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758275525662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift */; };
+		2758275B256630AA0061282D /* MessageFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758275A256630AA0061282D /* MessageFileViewController.swift */; };
+		51F1950A4FE03500DCC15CEC /* Pods_SMSBackupViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A976948D24BADAD8D96F960 /* Pods_SMSBackupViewerTests.framework */; };
+		AF12222952F286E43EE99486 /* Pods_SMSBackupViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B080773F7D00DE53E688B0C2 /* Pods_SMSBackupViewer.framework */; };
+		BFB70DA835F9A338626B4566 /* Pods_SMSBackupViewer_SMSBackupViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9F0CD11A662B8FA39B552F /* Pods_SMSBackupViewer_SMSBackupViewerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E9F0CD11A662B8FA39B552F /* Pods_SMSBackupViewer_SMSBackupViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMSBackupViewer_SMSBackupViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B672B99CD84F742972EB4C /* Pods-SMSBackupViewer-SMSBackupViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSBackupViewer-SMSBackupViewerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SMSBackupViewer-SMSBackupViewerUITests/Pods-SMSBackupViewer-SMSBackupViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		271226A825637805001E26FB /* SMSBackupViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSBackupViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271226AB25637805001E26FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		271226AD25637805001E26FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		271226AF25637805001E26FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		271226AF25637805001E26FB /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		271226B225637805001E26FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		271226B425637808001E26FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271226B725637808001E26FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		271226C925637809001E26FB /* SMSBackupViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSBackupViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSBackupViewerUITests.swift; sourceTree = "<group>"; };
 		271226CF25637809001E26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271226E125637BA1001E26FB /* MessageFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFileTableViewCell.swift; sourceTree = "<group>"; };
+		2758274D25662F040061282D /* ConversationViewController+MessagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+MessagesDataSource.swift"; sourceTree = "<group>"; };
+		2758275525662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+MessagesDisplayLayoutDelegate.swift"; sourceTree = "<group>"; };
+		2758275A256630AA0061282D /* MessageFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFileViewController.swift; sourceTree = "<group>"; };
+		446B525C938C573D7E58F5AC /* Pods-SMSBackupViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSBackupViewer.release.xcconfig"; path = "Target Support Files/Pods-SMSBackupViewer/Pods-SMSBackupViewer.release.xcconfig"; sourceTree = "<group>"; };
+		5B10BD28D24874CE781ADEA7 /* Pods-SMSBackupViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSBackupViewerTests.debug.xcconfig"; path = "Target Support Files/Pods-SMSBackupViewerTests/Pods-SMSBackupViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BF68453F7000431D82C3D9B /* Pods-SMSBackupViewer-SMSBackupViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSBackupViewer-SMSBackupViewerUITests.release.xcconfig"; path = "Target Support Files/Pods-SMSBackupViewer-SMSBackupViewerUITests/Pods-SMSBackupViewer-SMSBackupViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9642CCB3C4705CA6FA023160 /* Pods-SMSBackupViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSBackupViewer.debug.xcconfig"; path = "Target Support Files/Pods-SMSBackupViewer/Pods-SMSBackupViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		9A976948D24BADAD8D96F960 /* Pods_SMSBackupViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMSBackupViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B080773F7D00DE53E688B0C2 /* Pods_SMSBackupViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMSBackupViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFBDC377BE53AEFF9060B28 /* Pods-SMSBackupViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSBackupViewerTests.release.xcconfig"; path = "Target Support Files/Pods-SMSBackupViewerTests/Pods-SMSBackupViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF12222952F286E43EE99486 /* Pods_SMSBackupViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F1950A4FE03500DCC15CEC /* Pods_SMSBackupViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB70DA835F9A338626B4566 /* Pods_SMSBackupViewer_SMSBackupViewerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06BE491D4A705A729B1D81DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9642CCB3C4705CA6FA023160 /* Pods-SMSBackupViewer.debug.xcconfig */,
+				446B525C938C573D7E58F5AC /* Pods-SMSBackupViewer.release.xcconfig */,
+				20B672B99CD84F742972EB4C /* Pods-SMSBackupViewer-SMSBackupViewerUITests.debug.xcconfig */,
+				8BF68453F7000431D82C3D9B /* Pods-SMSBackupViewer-SMSBackupViewerUITests.release.xcconfig */,
+				5B10BD28D24874CE781ADEA7 /* Pods-SMSBackupViewerTests.debug.xcconfig */,
+				BCFBDC377BE53AEFF9060B28 /* Pods-SMSBackupViewerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2712269F25637805001E26FB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 				271226C125637809001E26FB /* SMSBackupViewerTests */,
 				271226CC25637809001E26FB /* SMSBackupViewerUITests */,
 				271226A925637805001E26FB /* Products */,
+				06BE491D4A705A729B1D81DE /* Pods */,
+				B575AB5C907960B0194398F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +139,12 @@
 			children = (
 				271226AB25637805001E26FB /* AppDelegate.swift */,
 				271226AD25637805001E26FB /* SceneDelegate.swift */,
-				271226AF25637805001E26FB /* ViewController.swift */,
+				271226AF25637805001E26FB /* ConversationViewController.swift */,
+				2758274D25662F040061282D /* ConversationViewController+MessagesDataSource.swift */,
+				2758275525662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift */,
 				271226B125637805001E26FB /* Main.storyboard */,
+				2758275A256630AA0061282D /* MessageFileViewController.swift */,
+				271226E125637BA1001E26FB /* MessageFileTableViewCell.swift */,
 				271226B425637808001E26FB /* Assets.xcassets */,
 				271226B625637808001E26FB /* LaunchScreen.storyboard */,
 				271226B925637808001E26FB /* Info.plist */,
@@ -128,6 +170,16 @@
 			path = SMSBackupViewerUITests;
 			sourceTree = "<group>";
 		};
+		B575AB5C907960B0194398F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B080773F7D00DE53E688B0C2 /* Pods_SMSBackupViewer.framework */,
+				1E9F0CD11A662B8FA39B552F /* Pods_SMSBackupViewer_SMSBackupViewerUITests.framework */,
+				9A976948D24BADAD8D96F960 /* Pods_SMSBackupViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 271226D225637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewer" */;
 			buildPhases = (
+				36DBF785D840117B5BFACF82 /* [CP] Check Pods Manifest.lock */,
 				271226A425637805001E26FB /* Sources */,
 				271226A525637805001E26FB /* Frameworks */,
 				271226A625637805001E26FB /* Resources */,
+				D99FE91BE6222F2158A9B871 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 271226D525637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewerTests" */;
 			buildPhases = (
+				C35E1604B73EB119D7A3B952 /* [CP] Check Pods Manifest.lock */,
 				271226BA25637809001E26FB /* Sources */,
 				271226BB25637809001E26FB /* Frameworks */,
 				271226BC25637809001E26FB /* Resources */,
@@ -170,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 271226D825637809001E26FB /* Build configuration list for PBXNativeTarget "SMSBackupViewerUITests" */;
 			buildPhases = (
+				80FACB5915F51A0B397140E2 /* [CP] Check Pods Manifest.lock */,
 				271226C525637809001E26FB /* Sources */,
 				271226C625637809001E26FB /* Frameworks */,
 				271226C725637809001E26FB /* Resources */,
+				CE3B76F3C3498186C5FA9D9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,12 +310,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36DBF785D840117B5BFACF82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSBackupViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FACB5915F51A0B397140E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSBackupViewer-SMSBackupViewerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35E1604B73EB119D7A3B952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSBackupViewerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3B76F3C3498186C5FA9D9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMSBackupViewer-SMSBackupViewerUITests/Pods-SMSBackupViewer-SMSBackupViewerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMSBackupViewer-SMSBackupViewerUITests/Pods-SMSBackupViewer-SMSBackupViewerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMSBackupViewer-SMSBackupViewerUITests/Pods-SMSBackupViewer-SMSBackupViewerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99FE91BE6222F2158A9B871 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMSBackupViewer/Pods-SMSBackupViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMSBackupViewer/Pods-SMSBackupViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMSBackupViewer/Pods-SMSBackupViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		271226A425637805001E26FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271226B025637805001E26FB /* ViewController.swift in Sources */,
+				271226B025637805001E26FB /* ConversationViewController.swift in Sources */,
+				271226E225637BA1001E26FB /* MessageFileTableViewCell.swift in Sources */,
+				2758274E25662F040061282D /* ConversationViewController+MessagesDataSource.swift in Sources */,
+				2758275B256630AA0061282D /* MessageFileViewController.swift in Sources */,
+				2758275625662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift in Sources */,
 				271226AC25637805001E26FB /* AppDelegate.swift in Sources */,
 				271226AE25637805001E26FB /* SceneDelegate.swift in Sources */,
 			);
@@ -433,12 +597,14 @@
 		};
 		271226D325637809001E26FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9642CCB3C4705CA6FA023160 /* Pods-SMSBackupViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQ8JASBGHD;
 				INFOPLIST_FILE = SMSBackupViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +618,14 @@
 		};
 		271226D425637809001E26FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446B525C938C573D7E58F5AC /* Pods-SMSBackupViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQ8JASBGHD;
 				INFOPLIST_FILE = SMSBackupViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +639,7 @@
 		};
 		271226D625637809001E26FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B10BD28D24874CE781ADEA7 /* Pods-SMSBackupViewerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +662,7 @@
 		};
 		271226D725637809001E26FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFBDC377BE53AEFF9060B28 /* Pods-SMSBackupViewerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +685,7 @@
 		};
 		271226D925637809001E26FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20B672B99CD84F742972EB4C /* Pods-SMSBackupViewer-SMSBackupViewerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +706,7 @@
 		};
 		271226DA25637809001E26FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF68453F7000431D82C3D9B /* Pods-SMSBackupViewer-SMSBackupViewerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
