@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SMS Backup Files-->
+        <!--Backup Files-->
         <scene sceneID="Jge-3W-PXp">
             <objects>
                 <tableViewController id="p4z-aC-SLq" customClass="MessageFileViewController" customModule="SMSBackupViewer" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,13 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="x0w-64-pQu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="x0w-64-pQu">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0w-64-pQu" id="D8h-KG-ofI">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RJS-kp-HkV" kind="show" identifier="Open File" id="jrb-JU-dmn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -31,7 +34,7 @@
                             <outlet property="delegate" destination="p4z-aC-SLq" id="mjF-b4-ktE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SMS Backup Files" id="e6R-Jv-ETk">
+                    <navigationItem key="navigationItem" title="Backup Files" id="e6R-Jv-ETk">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="L3M-jR-hR0">
                             <connections>
                                 <segue destination="oPu-CA-VEy" kind="show" id="HBU-d4-m2o"/>
@@ -77,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="-29" y="94"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Threads-->
         <scene sceneID="qhr-8x-b5U">
             <objects>
-                <tableViewController id="RJS-kp-HkV" sceneMemberID="viewController">
+                <tableViewController id="RJS-kp-HkV" customClass="ThreadListTableViewController" customModule="SMSBackupViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zgo-g2-GTO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,12 +103,13 @@
                             <outlet property="delegate" destination="RJS-kp-HkV" id="I8C-8j-Fta"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Threads" id="Hag-yB-O0w"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pW-69-BfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1433" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat Partner Name-->
         <scene sceneID="Raf-pW-9ga">
             <objects>
                 <viewController id="ceP-H9-7nH" sceneMemberID="viewController">
@@ -115,6 +119,7 @@
                         <viewLayoutGuide key="safeArea" id="OzC-jC-mNE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Chat Partner Name" id="M1r-YP-hmK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imu-sq-iRW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

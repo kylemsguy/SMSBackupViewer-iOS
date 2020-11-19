@@ -33,13 +33,23 @@ class MessageFileViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         print("\(#function) --- section = \(indexPath.section), row = \(indexPath.row)")
 
         cell.textLabel?.text = messageFiles[indexPath.row]
 
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "Open File") {
+            // pass data to next view
+            if let nextViewController = segue.destination as? ThreadListTableViewController {
+                // TODO: Get table view value and set ID accordingly
+                nextViewController.fileID = "test"
+           }
+        }
     }
     
 
