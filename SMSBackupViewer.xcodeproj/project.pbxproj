@@ -59,6 +59,7 @@
 		271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSBackupViewerUITests.swift; sourceTree = "<group>"; };
 		271226CF25637809001E26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271226E125637BA1001E26FB /* MessageFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFileTableViewCell.swift; sourceTree = "<group>"; };
+		2728C6EA256638D200E5428E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2758274D25662F040061282D /* ConversationViewController+MessagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+MessagesDataSource.swift"; sourceTree = "<group>"; };
 		2758275525662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+MessagesDisplayLayoutDelegate.swift"; sourceTree = "<group>"; };
 		2758275A256630AA0061282D /* MessageFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFileViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		2712269F25637805001E26FB = {
 			isa = PBXGroup;
 			children = (
+				2728C6EA256638D200E5428E /* README.md */,
 				271226AA25637805001E26FB /* SMSBackupViewer */,
 				271226C125637809001E26FB /* SMSBackupViewerTests */,
 				271226CC25637809001E26FB /* SMSBackupViewerUITests */,
