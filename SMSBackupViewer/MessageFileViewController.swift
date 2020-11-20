@@ -42,7 +42,7 @@ class MessageFileViewController: UITableViewController {
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Open File") {
             // pass data to next view
             if let nextViewController = segue.destination as? ThreadListTableViewController {

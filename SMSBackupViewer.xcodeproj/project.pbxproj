@@ -16,6 +16,7 @@
 		271226C325637809001E26FB /* SMSBackupViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226C225637809001E26FB /* SMSBackupViewerTests.swift */; };
 		271226CE25637809001E26FB /* SMSBackupViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */; };
 		271226E225637BA1001E26FB /* MessageFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271226E125637BA1001E26FB /* MessageFileTableViewCell.swift */; };
+		271EF75A2567893300195393 /* SMSBackupRestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EF7592567893300195393 /* SMSBackupRestore.swift */; };
 		2728C6EF256642AF00E5428E /* ThreadListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728C6EE256642AF00E5428E /* ThreadListTableViewController.swift */; };
 		2758274E25662F040061282D /* ConversationViewController+MessagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758274D25662F040061282D /* ConversationViewController+MessagesDataSource.swift */; };
 		2758275625662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758275525662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift */; };
@@ -60,6 +61,7 @@
 		271226CD25637809001E26FB /* SMSBackupViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSBackupViewerUITests.swift; sourceTree = "<group>"; };
 		271226CF25637809001E26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271226E125637BA1001E26FB /* MessageFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFileTableViewCell.swift; sourceTree = "<group>"; };
+		271EF7592567893300195393 /* SMSBackupRestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSBackupRestore.swift; sourceTree = "<group>"; };
 		2728C6EA256638D200E5428E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2728C6EE256642AF00E5428E /* ThreadListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadListTableViewController.swift; sourceTree = "<group>"; };
 		2758274D25662F040061282D /* ConversationViewController+MessagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+MessagesDataSource.swift"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		271226AA25637805001E26FB /* SMSBackupViewer */ = {
 			isa = PBXGroup;
 			children = (
+				271EF7582567890000195393 /* Parsers */,
 				271226AB25637805001E26FB /* AppDelegate.swift */,
 				271226AD25637805001E26FB /* SceneDelegate.swift */,
 				271226AF25637805001E26FB /* ConversationViewController.swift */,
@@ -173,6 +176,14 @@
 				271226CF25637809001E26FB /* Info.plist */,
 			);
 			path = SMSBackupViewerUITests;
+			sourceTree = "<group>";
+		};
+		271EF7582567890000195393 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				271EF7592567893300195393 /* SMSBackupRestore.swift */,
+			);
+			path = Parsers;
 			sourceTree = "<group>";
 		};
 		B575AB5C907960B0194398F3 /* Frameworks */ = {
@@ -426,6 +437,7 @@
 				271226B025637805001E26FB /* ConversationViewController.swift in Sources */,
 				2728C6EF256642AF00E5428E /* ThreadListTableViewController.swift in Sources */,
 				271226E225637BA1001E26FB /* MessageFileTableViewCell.swift in Sources */,
+				271EF75A2567893300195393 /* SMSBackupRestore.swift in Sources */,
 				2758274E25662F040061282D /* ConversationViewController+MessagesDataSource.swift in Sources */,
 				2758275B256630AA0061282D /* MessageFileViewController.swift in Sources */,
 				2758275625662FE60061282D /* ConversationViewController+MessagesDisplayLayoutDelegate.swift in Sources */,
